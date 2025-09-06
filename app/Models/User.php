@@ -66,4 +66,9 @@ class User extends Authenticatable implements FilamentUser
     {
         return $panel->getId() === 'admin' && $this->hasRole('admin');
     }
+
+    public function posts()
+    {
+        return $this->hasMany(Post::class);
+    }
 }
