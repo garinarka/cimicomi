@@ -15,7 +15,10 @@ Route::view('dashboard', 'dashboard')
 Route::middleware(['auth'])->group(function () {
     Route::redirect('settings', 'settings/profile');
 
-    Route::resource('posts', Controllers\PostController::class);
+    Volt::route('posts', 'posts.index')->name('posts.index');
+    Volt::route('posts/create', 'posts.create')->name('posts.create');
+    Volt::route('posts/{post}/edit', 'posts.edit')->name('posts.edit');
+    Volt::route('posts/{post}', 'posts.show')->name('posts.show');
 
     Volt::route('settings/profile', 'settings.profile')->name('settings.profile');
     Volt::route('settings/password', 'settings.password')->name('settings.password');

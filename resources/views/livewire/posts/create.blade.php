@@ -5,8 +5,8 @@ use App\Models\Post;
 use Illuminate\Support\Facades\Auth;
 
 new class extends Component {
-    public $title = '';
-    public $content = '';
+    public string $title = '';
+    public string $content = '';
 
     public function save()
     {
@@ -24,11 +24,12 @@ new class extends Component {
 
         return redirect()->route('posts.index')->with('success', 'Post created!');
     }
-}; ?>
+};
+?>
 
-<x-layouts.app :title="__('Create Post')">
+<section class="w-full">
     <div
-        class="max-w-3xl mx-auto p-6 rounded-xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-800">
+        class="mx-auto p-6 rounded-xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-800">
         <h1 class="text-xl font-semibold text-gray-800 dark:text-gray-200">Create Post</h1>
 
         <form wire:submit.prevent="save" class="mt-6 space-y-4">
@@ -61,4 +62,4 @@ new class extends Component {
             </div>
         </form>
     </div>
-</x-layouts.app>
+</section>

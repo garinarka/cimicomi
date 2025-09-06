@@ -5,8 +5,8 @@ use App\Models\Post;
 
 new class extends Component {
     public Post $post;
-    public $title;
-    public $content;
+    public string $title = '';
+    public string $content = '';
 
     public function mount()
     {
@@ -28,11 +28,12 @@ new class extends Component {
 
         return redirect()->route('posts.index')->with('success', 'Post updated!');
     }
-}; ?>
+};
+?>
 
-<x-layouts.app :title="__('Edit Post')">
+<section class="w-full">
     <div
-        class="max-w-3xl mx-auto p-6 rounded-xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-800">
+        class="mx-auto p-6 rounded-xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-800">
         <h1 class="text-xl font-semibold text-gray-800 dark:text-gray-200">Edit Post</h1>
 
         <form wire:submit.prevent="update" class="mt-6 space-y-4">
@@ -65,4 +66,4 @@ new class extends Component {
             </div>
         </form>
     </div>
-</x-layouts.app>
+</section>
