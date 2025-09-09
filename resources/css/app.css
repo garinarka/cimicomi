@@ -8,11 +8,15 @@
 @import '../../vendor/filament/schemas/resources/css/index.css';
 @import '../../vendor/filament/tables/resources/css/index.css';
 @import '../../vendor/filament/widgets/resources/css/index.css';
+@import "flowbite/src/themes/default";
+
+@plugin "flowbite/plugin";
 
 @source '../views';
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../vendor/livewire/flux-pro/stubs/**/*.blade.php';
 @source '../../vendor/livewire/flux/stubs/**/*.blade.php';
+@source "../../node_modules/flowbite";
 
 @custom-variant dark (&:where(.dark, .dark *));
 

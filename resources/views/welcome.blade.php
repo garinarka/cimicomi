@@ -69,17 +69,33 @@
         </div>
 
         <div class="grid auto-rows-min gap-4 md:grid-cols-3">
-            <div class="relative aspect-video overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700">
+            <div
+                class="flex items-center justify-center aspect-auto overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700">
+                <div class="relative p-4 md:p-6 lg:p-8">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                            Noteworthy technology acquisitions 2021
+                        </h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                        Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological
+                        order.
+                    </p>
+                    <a href="https://cloud.laravel.com" target="_blank"
+                        class="inline-block dark:bg-[#eeeeec] dark:border-[#eeeeec] dark:text-[#1C1C1A] dark:hover:bg-white dark:hover:border-white hover:bg-black hover:border-black px-4 py-1.5 bg-[#1b1b18] rounded-sm border border-black text-white text-sm">
+                        Read More
+                    </a>
+                </div>
+            </div>
+
+            <div
+                class="relative aspect-auto overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700">
                 <x-placeholder-pattern
                     class="absolute inset-0 size-full stroke-gray-900/20 dark:stroke-neutral-100/20" />
             </div>
 
-            <div class="relative aspect-video overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700">
-                <x-placeholder-pattern
-                    class="absolute inset-0 size-full stroke-gray-900/20 dark:stroke-neutral-100/20" />
-            </div>
-
-            <div class="relative aspect-video overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700">
+            <div
+                class="relative aspect-auto overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700">
                 <x-placeholder-pattern
                     class="absolute inset-0 size-full stroke-gray-900/20 dark:stroke-neutral-100/20" />
             </div>
