@@ -1,4 +1,6 @@
 <x-layouts.wlcm :title="__('Welcome')">
+    <img id="background" src="https://laravel.com/assets/img/welcome/background.svg" alt="Laravel background"
+        class="fixed inset-0 -z-10 w-full h-full object-cover pointer-events-none select-none" />
     <div class="flex h-full w-full flex-1 flex-col gap-4 rounded-xl">
         <!-- Heading -->
         <div class="relative overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700">
@@ -70,7 +72,7 @@
 
         <div class="grid auto-rows-min gap-4 md:grid-cols-3">
             <div
-                class="flex items-center justify-center aspect-auto overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700">
+                class="flex items-center justify-center aspect-auto overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-[#161615] dark:text-[#EDEDEC]">
                 <div class="relative p-4 md:p-6 lg:p-8">
                     <a href="#">
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -89,13 +91,13 @@
             </div>
 
             <div
-                class="relative aspect-auto overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700">
+                class="relative aspect-auto overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-[#161615] dark:text-[#EDEDEC]">
                 <x-placeholder-pattern
                     class="absolute inset-0 size-full stroke-gray-900/20 dark:stroke-neutral-100/20" />
             </div>
 
             <div
-                class="relative aspect-auto overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700">
+                class="relative aspect-auto overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-[#161615] dark:text-[#EDEDEC]">
                 <x-placeholder-pattern
                     class="absolute inset-0 size-full stroke-gray-900/20 dark:stroke-neutral-100/20" />
             </div>
